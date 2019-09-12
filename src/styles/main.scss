@@ -10,6 +10,12 @@ main {
   padding: 10px;
 }
 
+.title {
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+}
+
 .game-board {
   width: 100%;
 }
@@ -17,31 +23,36 @@ main {
 .dealer-score {
   margin: 10px;
   font-size: 2em;
+  min-height: 47px;
 }
 
 .hand-result {
   padding: 10px;
   font-size: 2em;
   text-align: center;
+  min-height: 40px;
 }
 
 .player-score {
   margin: 10px;
   font-size: 2em;
+  min-height: 47px;
 }
 
 .player-cards {
-  height: 100px;
-  border: 2px solid white;
+  min-height: 100px;
   border-radius: 5px;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .dealer-cards {
-  height: 100px;
-  border: 2px solid white;
+  min-height: 100px;
   border-radius: 5px;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 img {
@@ -61,3 +72,31 @@ img {
   display: block;
 }
 
+.hit {
+  display: none;
+}
+
+.stand {
+  display: none;
+}
+
+.upper-board {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards-count {
+  margin: 10px;
+  font-size: 2em;
+  min-height: 47px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+  .dealer-score,
+  .player-score,
+  .cards-count,
+  .hand-result {
+    font-size: 1em;
+  }
+}

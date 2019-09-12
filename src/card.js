@@ -10,7 +10,7 @@ export default class Card {
     switch (this.value) {
       case 1:
         convertedRank = "Ace";
-        this.gameValue = this.value;
+        this.gameValue = 11;
         break;
       case 11:
         convertedRank = "Jack";
